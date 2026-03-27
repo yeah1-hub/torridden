@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torridden</title>
+
+  <link rel="stylesheet" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+  <div class="mega-backdrop" id="backdrop"></div>
+
+  <!-- HEADER -->
+  <header id="header" class="transparent">
+    <div class="header-inner">
+      <img src="./images/LOGO.svg" alt="torriden">
+      <nav>
+        <div class="nav-item" data-menu="about">
+          <span class="nav-label">About</span>
+        </div>
+        <div class="nav-item" data-menu="brandwork">
+          <span class="nav-label">Brand WORK</span>
+        </div>
+        <div class="nav-item" data-menu="shop">
+          <span class="nav-label">Shop</span>
+        </div>
+        <div class="nav-item" data-menu="news">
+          <span class="nav-label">News</span>
+        </div>
+        <div class="nav-item" data-menu="event">
+          <span class="nav-label">Event</span>
+        </div>
+        <div class="nav-item" data-menu="community">
+          <span class="nav-label">Community</span>
+        </div>
+      </nav>
+
+      <div class="header_icons">
+        <a href="#"><img src="./images/search.svg" alt="search"></a>
+        <a href="#"><img src="./images/cart.svg" alt="cart"></a>
+        <a href="#"><img src="./images/mypage.svg" alt="mypage"></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MEGA MENU -->
+  <div class="mega-overlay" id="megaMenu">
+    <div class="mega-inner">
+
+      <!-- ABOUT -->
+      <div class="simple-panel" id="panel-about">
+        <a href="#" class="mega-link">브랜드 스토리</a>
+        <a href="#" class="mega-link">제품 스토리</a>
+        <a href="#" class="mega-link">컨셔스 뷰티</a>
+      </div>
+
+      <!-- BRAND -->
+      <div class="simple-panel" id="panel-brandwork">
+        <a href="#" class="mega-link">브랜드 캠페인</a>
+        <a href="#" class="mega-link">디자인 원칙</a>
+      </div>
+
+      <!-- SHOP -->
+      <div class="shop-panel" id="panel-shop">
+
+        <div class="shop-col">
+          <div class="col-heading">All</div>
+          <a href="#" class="mega-link">Best</a>
+          <a href="#" class="mega-link">New</a>
+          <a href="#" class="mega-link">Promotion</a>
+          <a href="#" class="mega-link">공식몰 특가</a>
+          <a href="#" class="mega-link">SET 할인</a>
+        </div>
+        <div class="shop-col">
+          <div class="col-heading">By Category</div>
+          <a href="#" class="mega-link">클렌징</a>
+          <a href="#" class="mega-link">토너 / 스킨</a>
+          <a href="#" class="mega-link">에센스 / 세럼</a>
+          <a href="#" class="mega-link">크림 / 로션</a>
+          <a href="#" class="mega-link">선케어</a>
+          <a href="#" class="mega-link">마스크 / 립</a>
+          <a href="#" class="mega-link">ACC</a>
+        </div>
+        <div class="shop-col">
+          <div class="col-heading">By Line</div>
+          <a href="#" class="mega-link">다이브인</a>
+          <a href="#" class="mega-link">밸런스풀</a>
+          <a href="#" class="mega-link">솔리드인</a>
+          <a href="#" class="mega-link">셀메이징</a>
+          <a href="#" class="mega-link">포맨</a>
+        </div>
+        <div class="shop-col">
+          <div class="col-heading">By Concern</div>
+          <a href="#" class="mega-link">수분케어</a>
+          <a href="#" class="mega-link">민감/진정</a>
+          <a href="#" class="mega-link">보습/장벽</a>
+          <a href="#" class="mega-link">자외선차단</a>
+        </div>
+      </div>
+
+      <!-- NEWS -->
+      <div class="simple-panel" id="panel-news">
+        <a href="#" class="mega-link">NOTICE</a>
+        <a href="#" class="mega-link">GLOBAL</a>
+      </div>
+
+      <!-- EVENT -->
+      <div class="simple-panel" id="panel-event">
+        <a href="#" class="mega-link">진행중인 이벤트</a>
+        <a href="#" class="mega-link">종료된 이벤트</a>
+      </div>
+
+      <!-- COMMUNITY -->
+      <div class="simple-panel" id="panel-community">
+        <a href="#" class="mega-link">멤버십</a>
+        <a href="#" class="mega-link">1:1문의</a>
+        <a href="#" class="mega-link">상품문의</a>
+        <a href="#" class="mega-link">자주 묻는 질문</a>
+        <a href="#" class="mega-link">리뷰</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- main -->
+  <section class="main">
+    <!-- Swiper -->
+    <div class="swiper main-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/main01.jpg" />
+          <div class="slide-content">
+            <div class="slide-anim">
+              <h2 class="slide-title">같이 쓰면 딱 좋은</br> 꿀조합 SET</h2>
+              <p class="slide-desc">최대 54% 할인!</p>
+              <a href="#" class="slide-cta">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/main02.jpg" />
+          <div class="slide-content">
+            <div class="slide-anim">
+              <h2 class="slide-title">나들이 준비!</br>선케어 기획전</h2>
+              <p class="slide-desc">균일가부터 사은품 증정까지!</p>
+              <a href="#" class="slide-cta">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/main03.jpg" />
+          <div class="slide-content">
+            <div class="slide-anim">
+              <h2 class="slide-title">신규회원에게 드리는 웰컴혜택</br> WELCOME PICK</h2>
+              <p class="slide-desc">신규 고객님만 누릴 수 있는 한정 특가</p>
+              <a href="#" class="slide-cta">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section class="best_seller">
+    <div class="contents_title_wrap">
+      <p class="contents_title_xlarge">BEST SELLER</p>
+
+    </div>
+
+    <div class="swiper best-seller-swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide best_seller_box">
+          <div class="best_seller_box_wrap">
+            <div class="best_seller_category_badge">
+              <p class="contents_title_xxxsmall">수분케어</p>
+            </div>
+            <div class="best_seller_box_img_01">
+            </div>
+          </div>
+          <div class="best_seller_box_title_wrap">
+            <p class="contents_title_xsmall">다이브인 포맨<br>히알루론산 올인원</p>
+            <p class="contents_article_small">24,000</p>
+          </div>
+        </div>
+
+
+
+
+        <div class="swiper-slide best_seller_box">
+          <div class="best_seller_box_wrap">
+            <div class="best_seller_category_badge">
+              <p class="contents_title_xxxsmall">보습/장벽</p>
+            </div>
+            <div class="best_seller_box_img_02">
+
+            </div>
+          </div>
+          <div class="best_seller_box_title_wrap">
+            <p class="contents_title_xsmall">다이브인 저분자<br>히알루론산 크림 80ml</p>
+            <p class="contents_article_small">21,000</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide best_seller_box">
+          <div class="best_seller_box_wrap">
+            <div class="best_seller_category_badge">
+              <p class="contents_title_xxxsmall">민감/진정</p>
+            </div>
+            <div class="best_seller_box_img_04"></div>
+          </div>
+          <div class="best_seller_box_title_wrap">
+            <p class="contents_title_xsmall">밸런스풀<br>시카 진정 크림 80ml</p>
+            <p class="contents_article_small">24,000</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide best_seller_box">
+          <div class="best_seller_box_wrap">
+            <div class="best_seller_category_badge">
+              <p class="contents_title_xxxsmall">수분케어</p>
+            </div>
+            <div class="best_seller_box_img_03"></div>
+          </div>
+          <div class="best_seller_box_title_wrap">
+            <p class="contents_title_xsmall">다이브인 저분자<br>히알루론산 스킨부스터 200ml</p>
+            <p class="contents_article_small">18,000</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide best_seller_box">
+          <div class="best_seller_box_wrap">
+            <div class="best_seller_category_badge">
+              <p class="contents_title_xxxsmall">민감/진정</p>
+            </div>
+            <div class="best_seller_box_img_05"></div>
+          </div>
+          <div class="best_seller_box_title_wrap">
+            <p class="contents_title_xsmall">밸런스풀 시카<br>진정 세럼 50ml</p>
+            <p class="contents_article_small">23,000</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+
+
+  <section class="line_container">
+
+    <div class="line_left">
+      <img src="./images/line_model.jpg" alt="#">
+      <div class="line_desc">
+        <p class="line_title" data-aos="fade-up" data-aos-duration="1000">깊은 수분 충전 케어 다이브인 라인</p>
+        <p class="line_sub_desc" data-aos="fade-up" data-aos-duration="1200">
+          건조함으로 지치고 메마른 피부에 저분자 히알루론산을 <br>빠르게 채워 넣어
+          피부 속부터 촉촉하고 맑은 컨디션으로 가꿔줍니다.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="line_right">
+      <div class="line_right_box">
+
+        <div class="line_product_item">
+          <div class="line_product_img">
+            <img src="./images/line01.jpg" alt="#">
+          </div>
+          <div class="line_product_info">
+            <p class="contents_title_xsmall">다이브인 수딩 크림</p>
+            <p class="contents_article_small" style="font-weight: 700;"><span class="line_discount">20%</span> 14,400원
+            </p>
+            <p class="line_original_price">18,000원</p>
+          </div>
+        </div>
+
+        <div class="line_product_item">
+          <div class="line_product_img">
+            <img src="./images/line02.jpg" alt="#">
+          </div>
+          <div class="line_product_info">
+            <p class="contents_title_xsmall">다이브인 히알루론산 세럼</p>
+            <p class="contents_article_small" style="font-weight: 700;"><span class="line_discount">15%</span> 16,100원
+            </p>
+            <p class="line_original_price">19,000원</p>
+          </div>
+        </div>
+
+        <div class="line_product_item">
+          <div class="line_product_img">
+            <img src="./images/line03.jpg" alt="#">
+          </div>
+          <div class="line_product_info">
+            <p class="contents_title_xsmall">다이브인 히알루론산 크림</p>
+            <p class="contents_article_small" style="font-weight: 700;"><span class="line_discount">10%</span> 22,500원
+            </p>
+            <p class="line_original_price">25,000원</p>
+          </div>
+        </div>
+
+        <div class="line_product_item">
+          <div class="line_product_img">
+            <img src="./images/line04.jpg" alt="#">
+          </div>
+          <div class="line_product_info">
+            <p class="contents_title_xsmall">다이브인 마일드 선크림</p>
+            <p class="contents_article_small" style="font-weight: 700;"><span class="line_discount">20%</span> 20,000원
+            </p>
+            <p class="line_original_price">25,000원</p>
+          </div>
+        </div>
+
+        <div class="line_product_item">
+          <div class="line_product_img">
+            <img src="./images/line05.jpg" alt="#">
+          </div>
+          <div class="line_product_info">
+            <p class="contents_title_xsmall">다이브인 히알루론산 토너</p>
+            <p class="contents_article_small" style="font-weight: 700;"><span class="line_discount">25%</span> 11,250원
+            </p>
+            <p class="line_original_price">15,000원</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="product_line">
+    <div class="contents_title_wrap">
+      <p class="contents_title_xlarge">PRODUCT LINE</p>
+      <span></span>
+    </div>
+
+    <div class="product_contents">
+
+      <div class="product_box" data-aos="fade-right" data-aos-offset="300">
+        <p class="product_box_ver_title">Ceramide<span>01</span></p>
+
+        <div class="product_box_title_wrap">
+          <p class="contents_title_large" data-aos="fade-up" data-aos-offset="400">Ceramide</p>
+          <br class="contents_article_medium" data-aos="fade-up" data-aos-offset="400">
+          세라마이드는 수분 유지를 돕고 건조함을 줄이며 피부의 장벽을 높여 </br> 피부의 전반적인 상태를 개선하는 데 도음을 줍니다.
+          </p>
+
+          <a href="#" class="product_line_contents_btn" data-aos="fade-up" data-aos-offset="400">자세히 보기</a>
+        </div>
+      </div>
+
+      <div class="product_box" data-aos="fade-right" data-aos-offset="400">
+        <p class="product_box_ver_title">Cica<span>02</span></p>
+
+        <div class="product_box_title_wrap">
+          <p class="contents_title_large">Cica</p>
+          <p class="contents_article_medium">
+            병풀 식물에서 추출된 시카는 눈에 띄는 붉은기를 진정시키고, 피부를 맑게 가꾸어주며 </br> 모공 크기를 개선하는 데 도움을 줍니다.
+          </p>
+
+          <a href="#" class="product_line_contents_btn">자세히 보기</a>
+        </div><!-- product_box_title_wrap -->
+      </div><!-- product_box -->
+
+      <div class="product_box" data-aos="fade-right" data-aos-offset="500">
+        <p class="product_box_ver_title">Vitamin<span>03</span></p>
+
+        <div class="product_box_title_wrap">
+          <p class="contents_title_large">Vitamin</p>
+          <p class="contents_article_medium">
+            비타민 C 는 강력한 항산화제로 , 환경적 요인으로 인한 산화 스트레스의 영향을 줄여 </br> 더욱 건강하고 탄력 있는 피부를 유지하는 데 도움을 줍니다.
+          </p>
+
+          <a href="#" class="product_line_contents_btn">자세히 보기</a>
+        </div><!-- product_box_title_wrap -->
+      </div><!-- product_box -->
+
+      <div class="product_box" data-aos="fade-right" data-aos-offset="500">
+        <p class="product_box_ver_title">Hyalurocin-acid<span>04</span></p>
+
+        <div class="product_box_title_wrap">
+          <p class="contents_title_large">Hyalurocin-acid</p>
+          <p class="contents_article_medium">
+            히알루론산은 피부와 신체에 자연적으로 존재하는 수분 결합 성분입니다. </br>
+            히알루론산 1g은 최대 6리터의 물과 결합하여 피부를 촉촉하게 유지하고 피부 장벽을 강화합니다.
+          </p>
+
+          <a href="#" class="product_line_contents_btn">자세히 보기</a>
+        </div><!-- product_box_title_wrap -->
+      </div><!-- product_box -->
+    </div><!-- product_contents -->
+  </section><!--product_line-->
+
+
+  <section class="video">
+    <div class="video_container" data-aos="fade-up" data-aos-offset="400">
+      <div class="video_wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WLVx2yNDIaM?si=T7YJ2-OkYRWT6b1Z"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="news_container">
+    <div class="news_wrap">
+
+      <div class="news_left">
+        <div class="news_img_box">
+          <img src="./images/news01.jpg" alt="news01">
+        </div>
+        <div class="news_txt">
+          <p class="news_badge">토리든 커넥트 성수</p>
+          <p class="news_title">Solivillage</p>
+        </div>
+      </div>
+
+      <div class="news_right">
+        <div class="news_item" data-aos="fade-up" data-aos-delay="200">
+          <div class="news_img_box">
+            <img src="./images/news02.jpg" alt="news02">
+          </div>
+          <div class="news_txt">
+            <p class="news_badge">NEW CELLMAZING LIP ESSENCE</p>
+            <p class="news_title">셀메이징 볼륨 립 에센스 런칭</p>
+          </div>
+        </div>
+
+        <div class="news_item" data-aos="fade-up" data-aos-delay="300">
+          <div class="news_img_box">
+            <img src="./images/news03.jpg" alt="news03">
+          </div>
+          <div class="news_txt">
+            <p class="news_badge">NEW BALANCEFUL FOR MEN</p>
+            <p class="news_title">밸런스풀 포맨 런칭</p>
+          </div>
+        </div>
+
+        <div class="news_item" data-aos="fade-up" data-aos-delay="400">
+          <div class="news_img_box">
+            <img src="./images/news04.jpg" alt="news04">
+          </div>
+          <div class="news_txt">
+            <p class="news_badge">NEW CELLMAZING </br>
+              BRIGHTENING SPOT TONING PAD</p>
+            <p class="news_title">셀메이징 비타 패드 런칭</p>
+          </div>
+        </div>
+
+        <div class="news_item" data-aos="fade-up" data-aos-delay="500">
+          <div class="news_img_box">
+            <img src="./images/news05.jpg" alt="news05">
+          </div>
+          <div class="news_txt">
+            <p class="news_badge">2026 OLIVEYOUNG FESTA</p>
+            <p class="news_title">2026 올리브영 패스타</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <footer id="footer">
+    <nav class="footer_nav">
+      <div class="footer_logo"></div>
+
+      <div class="sns">
+        <ul>
+          <li><a href="#"><img src="images/youtube_icon.png" alt="유튜브"></a></li>
+          <li><a href="#"><img src="images/instagram_icon.png" alt="인스타그램"></a></li>
+          <li><a href="#"><img src="images/kakaotalk_icon.png" alt="카카오톡"></a></li>
+          <li><a href="#"><img src="images/facebook_icon.png" alt="페이스북"></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="footer_info_wrap">
+      <div class="footer_info_left">
+        <div class="footer_info_left_01">
+          <ul>
+            <li>(주)토리든</li>
+            <li>대표자:권인구,이윤희</li>
+          </ul>
+        </div>
+        <div class="footer_info_left_01">
+          <ul>
+            <li>[서울 지사] 서울특별시 송파구 올림픽로300, 26층</li>
+            <li>[대전 본사] 대전 서구 도안북로93번길 10-3, 2층</li>
+          </ul>
+        </div>
+
+        <div class="footer_info_left_01">
+          <ul>
+            <li>통신판매업신고 : 2019-대전서구-0605</li>
+            <li>사업자등록번호 : 760-86-00222 </li>
+          </ul>
+        </div><!--footer_info_left_01-->
+
+        <div class="footer_info_left_01">
+          <ul>
+            <li>팩스번호 : 070-7834-7700</li>
+            <li>이메일 : info@torriden.com</li>
+          </ul>
+        </div><!--footer_info_left_01-->
+      </div><!--footer_info_left-->
+
+      <div class="footer_info_right">
+
+        <div class="footer_info_right_01">
+          <ul>
+            <li>운영시간</li>
+
+            <li>평일 10:00 ~ 17:00 (주말 및 공휴일 휴무)</li>
+            <li>점심 12:00 ~ 13:00</li>
+          </ul>
+        </div><!--footer_info_right_01-->
+
+        <div class="footer_info_right_01">
+          <ul>
+            <li>고객센터</li>
+            <li>1600-3584</li>
+            <li>1:1문의</li>
+            <li>공지사항</li>
+            <li>채용사이트</li>
+          </ul>
+        </div><!--footer_info_right_01-->
+
+        <div class="footer_info_right_01">
+          <ul>
+            <li>브랜드소개</li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+        </div><!--footer_info_right_01-->
+
+      </div><!--footer_info_right-->
+    </div><!--footer_info_wrap-->
+  </footer>
+
+
+
+
+
+
+  <!-- ----------------------------------- Smooth scroll ----------------------------------- -->
+  <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="js/smooth_scroll.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+
+  <script>
+    window.addEventListener('load', function () {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out-sine',
+        offset: 0,
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
