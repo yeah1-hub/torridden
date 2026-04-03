@@ -212,7 +212,7 @@ $(document).ready(function () {
 });
 
 
-/* ── LINE RIGHT BOX 스크롤 제어 ── */
+/* ── LINE RIGHT BOX 스크롤 제어 ── *//* ── LINE RIGHT BOX 스크롤 제어 ── */
 const lineRightBox = document.querySelector('.line_right_box');
 let isTransferring = false;
 
@@ -225,8 +225,11 @@ lineRightBox.addEventListener('wheel', (e) => {
     e.preventDefault();
     if (isTransferring) return;
     isTransferring = true;
-    lenis.scrollTo(window.scrollY + e.deltaY * 3, { duration: 1 });
-    setTimeout(() => { isTransferring = false; }, 1000);
+
+    const nextSection = document.querySelector('.product_line');
+    lenis.scrollTo(nextSection, { duration: 1.5, offset: -80 });
+
+    setTimeout(() => { isTransferring = false; }, 1500);
     return;
   }
 
@@ -234,8 +237,11 @@ lineRightBox.addEventListener('wheel', (e) => {
     e.preventDefault();
     if (isTransferring) return;
     isTransferring = true;
-    lenis.scrollTo(window.scrollY + e.deltaY * 3, { duration: 1 });
-    setTimeout(() => { isTransferring = false; }, 1000);
+
+    const prevSection = document.querySelector('.best_seller');
+    lenis.scrollTo(prevSection, { duration: 1.5, offset: -80 });
+
+    setTimeout(() => { isTransferring = false; }, 1500);
     return;
   }
 
