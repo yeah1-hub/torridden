@@ -75,12 +75,10 @@ function openMega(menu) {
   if (panel) panel.classList.add('active');
 
   if (menu === 'shop') {
-    // shop은 가운데 고정
     megaInner.style.marginLeft = 'auto';
     megaInner.style.marginRight = 'auto';
     megaInner.style.maxWidth = '1280px';
   } else {
-    // 나머지는 nav-item 위치 기준
     const activeNav = document.querySelector(`.nav-item[data-menu="${menu}"]`);
     if (activeNav) {
       const rect = activeNav.getBoundingClientRect();
@@ -213,27 +211,32 @@ $(document).ready(function () {
   });
 });
 
+
 /* ── LINE RIGHT BOX 스크롤 제어 ── */
 const lineRightBox = document.querySelector('.line_right_box');
+let isTransferring = false;
 
 lineRightBox.addEventListener('wheel', (e) => {
   const { scrollTop, scrollHeight, clientHeight } = lineRightBox;
   const isAtBottom = scrollTop + clientHeight >= scrollHeight - 1;
   const isAtTop = scrollTop === 0;
 
-  // 내부 스크롤이 끝에 도달했을 때 페이지 스크롤로 넘김
   if (isAtBottom && e.deltaY > 0) {
     e.preventDefault();
-    window.scrollBy({ top: e.deltaY, behavior: 'smooth' });
+    if (isTransferring) return;
+    isTransferring = true;
+    lenis.scrollTo(window.scrollY + e.deltaY * 3, { duration: 1 });
+    setTimeout(() => { isTransferring = false; }, 1000);
     return;
   }
 
   if (isAtTop && e.deltaY < 0) {
     e.preventDefault();
-    window.scrollBy({ top: e.deltaY, behavior: 'smooth' });
+    if (isTransferring) return;
+    isTransferring = true;
+    lenis.scrollTo(window.scrollY + e.deltaY * 3, { duration: 1 });
+    setTimeout(() => { isTransferring = false; }, 1000);
     return;
   }
 
-  // 내부 스크롤 중엔 페이지 스크롤 막기
-  e.stopPropagation();
 }, { passive: false });
