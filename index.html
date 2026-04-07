@@ -21,27 +21,28 @@
 
   <!-- HEADER -->
   <header id="header" class="transparent">
+    <!--class명 transparent-> scrolled로 바꾸면 고정시키기-->
     <div class="header-inner">
       <img src="./images/LOGO.svg" alt="torriden">
       <nav>
-        <div class="nav-item" data-menu="about">
+        <a href="./about.html" class="nav-item" data-menu="about">
           <span class="nav-label">About</span>
-        </div>
-        <div class="nav-item" data-menu="brandwork">
+        </a>
+        <a class="nav-item" data-menu="brandwork">
           <span class="nav-label">Brand WORK</span>
-        </div>
-        <div class="nav-item" data-menu="shop">
+        </a>
+        <a href="./shop.html" class="nav-item" data-menu="shop">
           <span class="nav-label">Shop</span>
-        </div>
-        <div class="nav-item" data-menu="news">
+        </a>
+        <a class="nav-item" data-menu="news">
           <span class="nav-label">News</span>
-        </div>
-        <div class="nav-item" data-menu="event">
+        </a>
+        <a class="nav-item" data-menu="event">
           <span class="nav-label">Event</span>
-        </div>
-        <div class="nav-item" data-menu="community">
+        </a>
+        <a class="nav-item" data-menu="community">
           <span class="nav-label">Community</span>
-        </div>
+        </a>
       </nav>
 
       <div class="header_icons">
@@ -169,6 +170,9 @@
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
+      <div class="slide-progress-bar">
+  <div class="slide-progress-fill"></div>
+</div>
     </div>
   </section>
 
@@ -193,6 +197,7 @@
               <p class="contents_title_xxxsmall">수분케어</p>
             </div>
             <div class="best_seller_box_img_01">
+              <img class="shop_icon" src="./images/shop_icon.png" alt="장바구니">
             </div>
           </div>
           <div class="best_seller_box_title_wrap">
@@ -202,15 +207,13 @@
         </div>
 
 
-
-
         <div class="swiper-slide best_seller_box">
           <div class="best_seller_box_wrap">
             <div class="best_seller_category_badge">
               <p class="contents_title_xxxsmall">보습/장벽</p>
             </div>
             <div class="best_seller_box_img_02">
-
+              <img class="shop_icon" src="./images/shop_icon.png" alt="장바구니">
             </div>
           </div>
           <div class="best_seller_box_title_wrap">
@@ -224,7 +227,9 @@
             <div class="best_seller_category_badge">
               <p class="contents_title_xxxsmall">민감/진정</p>
             </div>
-            <div class="best_seller_box_img_04"></div>
+            <div class="best_seller_box_img_04">
+              <img class="shop_icon" src="./images/shop_icon.png" alt="장바구니">
+            </div>
           </div>
           <div class="best_seller_box_title_wrap">
             <p class="contents_title_xsmall">밸런스풀<br>시카 진정 크림 80ml</p>
@@ -237,7 +242,12 @@
             <div class="best_seller_category_badge">
               <p class="contents_title_xxxsmall">수분케어</p>
             </div>
-            <div class="best_seller_box_img_03"></div>
+            <div class="best_seller_box_img_03">
+              <img class="shop_icon" src="./images/shop_icon.png" alt="장바구니">
+
+            </div>
+            <img class="shop_icon" src="./images/shop_icon.png" alt="장바구니">
+
           </div>
           <div class="best_seller_box_title_wrap">
             <p class="contents_title_xsmall">다이브인 저분자<br>히알루론산 스킨부스터 200ml</p>
@@ -250,7 +260,9 @@
             <div class="best_seller_category_badge">
               <p class="contents_title_xxxsmall">민감/진정</p>
             </div>
-            <div class="best_seller_box_img_05"></div>
+            <div class="best_seller_box_img_05">
+              <img class="shop_icon" src="./images/shop_icon.png" alt="장바구니">
+            </div>
           </div>
           <div class="best_seller_box_title_wrap">
             <p class="contents_title_xsmall">밸런스풀 시카<br>진정 세럼 50ml</p>
@@ -413,7 +425,7 @@
 
 
   <section class="video">
-    <div class="video_container" data-aos="fade-up" data-aos-offset="400">
+    <div class="video_container">
       <div class="video_wrapper">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/WLVx2yNDIaM?si=T7YJ2-OkYRWT6b1Z"
           title="YouTube video player" frameborder="0"

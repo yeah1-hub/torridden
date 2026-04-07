@@ -1,0 +1,239 @@
+  /* ── Shop Hero ── */
+  .shop-hero {
+    padding-top: 120px;
+    padding-bottom: 48px;
+    text-align: center;
+  }
+ 
+  .shop-hero-title {
+    font-size: clamp(45px, 8vw, 55px);
+    font-weight: 700;
+    color: #111;
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+ 
+  /* ── Tab Nav ── */
+  .shop-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    border-bottom: 1.5px solid #e0e0e0;
+    margin-bottom: 56px;
+  }
+ 
+  .shop-tab {
+    position: relative;
+    padding: 14px 36px;
+    font-size: 19px;
+    font-weight: 600;
+   
+    color: #999;
+    cursor: pointer;
+   
+    border: none;
+    transition: color 0.22s ease;
+  
+  }
+
+  /*탭 검정밑줄효과*/
+  .shop-tab::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #111;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+    transform-origin: center;
+  }
+ 
+  .shop-tab:hover {
+    color: #111;
+  }
+
+  .shop-tab:hover::after {
+    transform: scaleX(1);
+  }
+ 
+  /* 활성 탭 */
+  .shop-tab.active {
+    color: #111;
+  }
+  .shop-tab.active::after {
+    transform: scaleX(1);
+  }
+ 
+  /* ── Product Grid ── */
+  .shop-section {
+    padding: 0 0 150px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+ 
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px 9px;
+  }
+ 
+  /* 탭 패널 숨김/노출 */
+  .tab-panel {
+    display: none;
+  }
+  .tab-panel.active {
+    display: block;
+  }
+ 
+  /* ── Product Card ── */
+  .product-card {
+    position: relative;
+    cursor: pointer;
+  }
+
+  a.product-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+ 
+  .product-card__img-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    background: #f4f4f2;
+    overflow: hidden;
+  }
+ 
+  .product-card__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: block;
+  }
+ 
+  .product-card:hover .product-card__img-wrap img {
+    transform: scale(1.05);
+  }
+ 
+  
+ 
+  /* 카트에 담기 */
+  .product-card__cart-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px 0;
+    background: rgba(17, 17, 17, 0.709);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.28s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 3;  
+  }
+ 
+  .product-card__cart-overlay span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+ 
+  .product-card__cart-overlay span::before {
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url(../images/cartwhith_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+ 
+  .product-card:hover .product-card__cart-overlay {
+    transform: translateY(0);
+  }
+ 
+  /* 담기 완료 */
+  .product-card__cart-overlay.added {
+    background: rgba(74, 144, 100, 0.727);
+    transform: translateY(0) !important;
+  }
+ 
+  .product-card__info {
+    padding: 14px 0 0;
+  }
+ 
+  .product-card__name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+    line-height: 1.4;
+    margin-bottom: 7px;
+  }
+ 
+  .product-card__price-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+ 
+  .product-card__price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+  }
+ 
+  .product-card__original {
+    font-size: 17px;
+    color: #b0b0b0;
+    text-decoration: line-through;
+  }
+ 
+  .product-card__discount {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0073ff;
+  }
+ 
+  /* ── 장바구니 토스트 ── */
+  .cart-toast {
+    position: fixed;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 13px 28px;
+    border-radius: 100px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 9999;
+    white-space: nowrap;
+    letter-spacing: 0.03em;
+  }
+ 
+  .cart-toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+ 
+  /* ── 반응형 ── */
+  @media (max-width: 1024px) {
+    .product-grid { grid-template-columns: repeat(2, 1fr); }
+    .shop-section { padding: 0 32px 80px; }
+  }
+ 
+  @media (max-width: 700px) {
+    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 14px; }
+    .shop-section { padding: 0 18px 60px; }
+    .shop-tab { padding: 12px 20px; font-size: 12px; }
+  }

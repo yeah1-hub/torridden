@@ -113,17 +113,40 @@ function animateSlide(swiper) {
     );
   }
 }
+function startProgress() {
+  const fill = document.querySelector('.slide-progress-fill');
+  fill.style.transition = 'none';
+  fill.style.width = '0%';
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      fill.style.transition = 'width 3s linear';
+      fill.style.width = '100%';
+    });
+  });
+}
 
 var swiper = new Swiper(".main-swiper", {
   spaceBetween: 30,
   effect: "fade",
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   on: {
-    init: function () { animateSlide(this); },
-    slideChange: function () { animateSlide(this); }
+    init: function () { 
+      animateSlide(this); 
+      startProgress();
+    },
+    slideChange: function () { 
+      animateSlide(this);
+      startProgress();
+    }
   }
 });
 
@@ -212,7 +235,7 @@ $(document).ready(function () {
 });
 
 
-/* ── LINE RIGHT BOX 스크롤 제어 ── *//* ── LINE RIGHT BOX 스크롤 제어 ── */
+/* ── LINE RIGHT BOX 스크롤 제어 ── */
 const lineRightBox = document.querySelector('.line_right_box');
 let isTransferring = false;
 
@@ -246,3 +269,23 @@ lineRightBox.addEventListener('wheel', (e) => {
   }
 
 }, { passive: false });
+
+
+
+
+
+
+
+/* ── YOUTUBE iframe 스크롤 이슈 해결 ── */
+const videoWrapper = document.querySelector('.video_wrapper');
+
+if (videoWrapper) {
+  // iframe에 포커스 들어가면 wheel을 window로 전달
+  window.addEventListener('blur', () => {
+    setTimeout(() => {
+      if (document.activeElement && document.activeElement.tagName === 'IFRAME') {
+        window.focus();
+      }
+    }, 0);
+  });
+}

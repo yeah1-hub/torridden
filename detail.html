@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torridden</title>
+
+    <link rel="stylesheet" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/detail.css">
+
+</head>
+
+
+<body>
+
+    <div class="mega-backdrop" id="backdrop"></div>
+
+    <!-- HEADER -->
+    <header id="header" class="scrolled">
+        <div class="header-inner">
+            <a href="./index.html">
+                <img src="./images/LOGO.svg" alt="torriden">
+            </a>
+            <nav>
+                <a href="./about.html" class="nav-item" data-menu="about">
+                    <span class="nav-label">About</span>
+                </a>
+                <a class="nav-item" data-menu="brandwork">
+                    <span class="nav-label">Brand WORK</span>
+                </a>
+                <a href="./shop.html" class="nav-item" data-menu="shop">
+                    <span class="nav-label">Shop</span>
+                </a>
+                <a class="nav-item" data-menu="news">
+                    <span class="nav-label">News</span>
+                </a>
+                <a class="nav-item" data-menu="event">
+                    <span class="nav-label">Event</span>
+                </a>
+                <a class="nav-item" data-menu="community">
+                    <span class="nav-label">Community</span>
+                </a>
+            </nav>
+
+            <div class="header_icons">
+                <a href="#"><img src="./images/search.svg" alt="search"></a>
+                <a href="#"><img src="./images/cart.svg" alt="cart"></a>
+                <a href="#"><img src="./images/mypage.svg" alt="mypage"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MEGA MENU -->
+    <div class="mega-overlay" id="megaMenu">
+        <div class="mega-inner">
+
+            <!-- ABOUT -->
+            <div class="simple-panel" id="panel-about">
+                <a href="#" class="mega-link">브랜드 스토리</a>
+                <a href="#" class="mega-link">제품 스토리</a>
+                <a href="#" class="mega-link">컨셔스 뷰티</a>
+            </div>
+
+            <!-- BRAND -->
+            <div class="simple-panel" id="panel-brandwork">
+                <a href="#" class="mega-link">브랜드 캠페인</a>
+                <a href="#" class="mega-link">디자인 원칙</a>
+            </div>
+
+            <!-- SHOP -->
+            <div class="shop-panel" id="panel-shop">
+
+                <div class="shop-col">
+                    <div class="col-heading">All</div>
+                    <a href="#" class="mega-link">Best</a>
+                    <a href="#" class="mega-link">New</a>
+                    <a href="#" class="mega-link">Promotion</a>
+                    <a href="#" class="mega-link">공식몰 특가</a>
+                    <a href="#" class="mega-link">SET 할인</a>
+                </div>
+                <div class="shop-col">
+                    <div class="col-heading">By Category</div>
+                    <a href="#" class="mega-link">클렌징</a>
+                    <a href="#" class="mega-link">토너 / 스킨</a>
+                    <a href="#" class="mega-link">에센스 / 세럼</a>
+                    <a href="#" class="mega-link">크림 / 로션</a>
+                    <a href="#" class="mega-link">선케어</a>
+                    <a href="#" class="mega-link">마스크 / 립</a>
+                    <a href="#" class="mega-link">ACC</a>
+                </div>
+                <div class="shop-col">
+                    <div class="col-heading">By Line</div>
+                    <a href="#" class="mega-link">다이브인</a>
+                    <a href="#" class="mega-link">밸런스풀</a>
+                    <a href="#" class="mega-link">솔리드인</a>
+                    <a href="#" class="mega-link">셀메이징</a>
+                    <a href="#" class="mega-link">포맨</a>
+                </div>
+                <div class="shop-col">
+                    <div class="col-heading">By Concern</div>
+                    <a href="#" class="mega-link">수분케어</a>
+                    <a href="#" class="mega-link">민감/진정</a>
+                    <a href="#" class="mega-link">보습/장벽</a>
+                    <a href="#" class="mega-link">자외선차단</a>
+                </div>
+            </div>
+
+            <!-- NEWS -->
+            <div class="simple-panel" id="panel-news">
+                <a href="#" class="mega-link">NOTICE</a>
+                <a href="#" class="mega-link">GLOBAL</a>
+            </div>
+
+            <!-- EVENT -->
+            <div class="simple-panel" id="panel-event">
+                <a href="#" class="mega-link">진행중인 이벤트</a>
+                <a href="#" class="mega-link">종료된 이벤트</a>
+            </div>
+
+            <!-- COMMUNITY -->
+            <div class="simple-panel" id="panel-community">
+                <a href="#" class="mega-link">멤버십</a>
+                <a href="#" class="mega-link">1:1문의</a>
+                <a href="#" class="mega-link">상품문의</a>
+                <a href="#" class="mega-link">자주 묻는 질문</a>
+                <a href="#" class="mega-link">리뷰</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- DETAIL SECTION -->
+<section class="detail-section">
+
+    <!-- 브레드크럼 -->
+    <div class="detail-breadcrumb">
+        <a href="./shop.html">Shop</a>
+        <span> &gt; </span>
+        <span>다이브인</span>
+        <span> &gt; </span>
+        <span>셀메이징 비타민C 브라이트닝 흔적 토닝 패드 70매</span>
+    </div>
+
+    <div class="detail-wrap">
+
+        <div class="detail-img-area">
+            <div class="detail-main-img">
+                <img src="./images/shop/new04.jpg" alt="상품이미지">
+            </div>
+        </div>
+
+        <div class="detail-info-area">
+
+            <p class="detail-brand">셀메이징</p>
+            <h2 class="detail-name">비타민C 브라이트닝 흔적 토닝 패드 70매</h2>
+
+            <div class="detail-price-wrap">
+                <span class="detail-discount">10%</span>
+                <span class="detail-price">27,000원</span>
+                <span class="detail-original">30,000원</span>
+            </div>
+
+            <div class="detail-divider"></div>
+
+            <div class="detail-qty-wrap">
+                <span class="detail-qty-label">수량</span>
+                <div class="detail-qty-box">
+                    <button class="qty-btn minus">−</button>
+                    <span class="qty-num">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+            </div>
+
+            <!-- 배송비 박스 -->
+            <div class="detail-shipping-box">
+                <p class="detail-shipping-msg"><span style="color: #0073ff;">2,000원</span> 추가 시 <span style="color: #0073ff;">무료배송!</span></p>
+                <div class="detail-shipping-bar-wrap">
+                    <div class="detail-shipping-bar-track">
+                        <div class="detail-shipping-bar-fill" style="width: 93%;"></div>
+                    </div>
+                    <div class="detail-shipping-bar-labels">
+                        <span>0원</span>
+                        <span>30,000원</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 총 금액 -->
+            <div class="detail-total-wrap">
+                <span class="detail-total-label">총 수량 (금액)</span>
+                <span class="detail-total-price">27,000원 <em>(1개)</em></span>
+            </div>
+
+            <!-- 구매 버튼 -->
+            <div class="detail-btn-wrap">
+                <button class="detail-btn-cart">장바구니 담기</button>
+                <button class="detail-btn-buy">구매하기</button>
+            </div>
+
+            <!-- N Pay -->
+            <div class="detail-bottom-wrap">
+                <button class="detail-btn-npay">
+                    <img src="./images/detail/npay_icon.png" alt="npay구매">
+                </button>
+                <button class="detail-btn-wish">
+                    찜
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+  
+
+
+
+
+<div class="tab-wrap">
+  <button class="tab-btn active" data-tab="detail">상세정보</button>
+  <button class="tab-btn" data-tab="review">제품후기</button>
+  <button class="tab-btn" data-tab="qna">Q&A</button>
+</div>
+
+<div class="tab-content-wrap">
+  <div class="tab-pane active" id="tab-detail">
+    <section class="shop-bottom-imgs">
+      <img src="./images/detail/detail_img01.jpg" alt="#">
+      <img src="./images/detail/detail_img02.jpg" alt="#">
+      <img src="./images/detail/detail_img03.jpg" alt="#">
+      <img src="./images/detail/detail_img04.jpg" alt="#">
+    </section>
+  </div>
+  <div class="tab-pane" id="tab-review">
+
+  </div>
+  <div class="tab-pane" id="tab-qna">
+  
+  </div>
+</div>
+
+
+
+
+    <footer id="footer">
+        <nav class="footer_nav">
+            <div class="footer_logo"></div>
+
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="images/youtube_icon.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/instagram_icon.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="images/kakaotalk_icon.png" alt="카카오톡"></a></li>
+                    <li><a href="#"><img src="images/facebook_icon.png" alt="페이스북"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="footer_info_wrap">
+            <div class="footer_info_left">
+                <div class="footer_info_left_01">
+                    <ul>
+                        <li>(주)토리든</li>
+                        <li>대표자:권인구,이윤희</li>
+                    </ul>
+                </div>
+                <div class="footer_info_left_01">
+                    <ul>
+                        <li>[서울 지사] 서울특별시 송파구 올림픽로300, 26층</li>
+                        <li>[대전 본사] 대전 서구 도안북로93번길 10-3, 2층</li>
+                    </ul>
+                </div>
+                <div class="footer_info_left_01">
+                    <ul>
+                        <li>통신판매업신고 : 2019-대전서구-0605</li>
+                        <li>사업자등록번호 : 760-86-00222</li>
+                    </ul>
+                </div>
+                <div class="footer_info_left_01">
+                    <ul>
+                        <li>팩스번호 : 070-7834-7700</li>
+                        <li>이메일 : info@torriden.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_info_right">
+                <div class="footer_info_right_01">
+                    <ul>
+                        <li>운영시간</li>
+                        <li>평일 10:00 ~ 17:00 (주말 및 공휴일 휴무)</li>
+                        <li>점심 12:00 ~ 13:00</li>
+                    </ul>
+                </div>
+                <div class="footer_info_right_01">
+                    <ul>
+                        <li>고객센터</li>
+                        <li>1600-3584</li>
+                        <li>1:1문의</li>
+                        <li>공지사항</li>
+                        <li>채용사이트</li>
+                    </ul>
+                </div>
+                <div class="footer_info_right_01">
+                    <ul>
+                        <li>브랜드소개</li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="js/smooth_scroll.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"></script>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/detail.js"></script>
+
+   
+
+</body>
+
+</html>

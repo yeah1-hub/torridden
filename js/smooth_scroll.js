@@ -14,3 +14,4 @@ gsap.ticker.add((time) => {
 gsap.ticker.lagSmoothing(0);
 
 lenis.on('scroll', ScrollTrigger.update);
+
